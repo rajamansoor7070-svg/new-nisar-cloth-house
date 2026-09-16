@@ -1,1 +1,97 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Nisar Cloth House</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f7f7f7;color:#222}
+header{background:#111;color:white;padding:22px;text-align:center}
+header h1{font-size:32px}
+header p{margin-top:8px;color:#ddd}
+nav{background:#222;text-align:center;padding:14px}
+nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold}
+.hero{padding:70px 20px;text-align:center;background:linear-gradient(135deg,#111,#555);color:white}
+.hero h2{font-size:40px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;background:#25D366;color:white;padding:14px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
+section{padding:45px 20px;text-align:center}
+section h2{font-size:30px;margin-bottom:25px}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.card{background:white;width:280px;padding:30px 20px;border-radius:12px;box-shadow:0 3px 12px #ccc}
+.card h3{margin-bottom:12px;font-size:22px}
+.card p{color:#666}
+.contact{background:#eee}
+footer{background:#111;color:white;text-align:center;padding:25px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>New Nisar Cloth House</h1>
+<p>Quality Clothing for Everyone</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#collections">Collections</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Welcome to New Nisar Cloth House</h2>
+<p>Men's, Ladies' & Kids' Clothing Available</p>
+<a class="btn" href="https://wa.me/923107351732">Order on WhatsApp</a>
+</div>
+
+<section id="collections">
+<h2>Our Collections</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Men's Collection</h3>
+<p>Stylish and quality clothing for men.</p>
+</div>
+
+<div class="card">
+<h3>Ladies' Collection</h3>
+<p>Beautiful dresses and clothing for ladies.</p>
+</div>
+
+<div class="card">
+<h3>Kids' Collection</h3>
+<p>Comfortable and attractive clothes for kids.</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+New Nisar Cloth House provides quality clothing for all age groups.
+Visit our shop for the latest clothing collections.
+</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Location:</strong> District Bhimber, P/O Samahni Choki, Azad Kashmir</p>
+<p style="margin:10px 0"><strong>Phone:</strong> 0310-7351732</p>
+<p><strong>Email:</strong> rajamansoor7070@gmail.com</p>
+<br>
+<a class="btn" href="https://wa.me/923107351732">Chat on WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 New Nisar Cloth House. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
