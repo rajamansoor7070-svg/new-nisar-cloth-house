@@ -7,171 +7,199 @@
 <title>New Nisar Cloth House | Quality Clothing</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f7f7f7;
-    color:#222;
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
 }
 
-header{
-    background:#111;
-    color:white;
-    padding:35px 20px;
-    text-align:center;
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
 }
 
-header h1{
-    font-size:38px;
-    margin-bottom:10px;
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-header p{
-    font-size:17px;
-    color:#ddd;
+header p {
+    font-size: 18px;
+    color: #ddd;
 }
 
-nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:100;
+nav {
+    background: #222;
+    text-align: center;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
 }
 
-nav a:hover{
-    color:#25d366;
+nav a:hover {
+    color: #25D366;
 }
 
-.hero{
-    background:linear-gradient(135deg,#111,#444);
-    color:white;
-    text-align:center;
-    padding:90px 20px;
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-.hero h2{
-    font-size:42px;
-    margin-bottom:15px;
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
 }
 
-.hero p{
-    font-size:20px;
-    margin-bottom:30px;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-.whatsapp{
-    display:inline-block;
-    background:#25d366;
-    color:white;
-    padding:15px 28px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:17px;
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 5px;
 }
 
-.whatsapp:hover{
-    background:#128c7e;
+.btn:hover {
+    background: #128C7E;
 }
 
-section{
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-section h2{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:35px;
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
 }
 
-.collections{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:25px;
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
-.card{
-    background:white;
-    padding:35px 20px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:0.3s;
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    text-align: center;
+    transition: .3s;
 }
 
-.card:hover{
-    transform:translateY(-7px);
+.card:hover {
+    transform: translateY(-8px);
 }
 
-.icon{
-    font-size:55px;
-    margin-bottom:15px;
+.card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
 }
 
-.card h3{
-    font-size:23px;
-    margin-bottom:10px;
+.card-content {
+    padding: 20px;
 }
 
-.about{
-    background:#111;
-    color:white;
-    max-width:none;
-    text-align:center;
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.about p{
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-    color:#ddd;
+.card p {
+    color: #666;
+    margin-bottom: 15px;
 }
 
-.contact{
-    text-align:center;
+.about {
+    background: #111;
+    color: white;
+    max-width: none;
+    text-align: center;
 }
 
-.contact p{
-    margin:12px;
-    font-size:18px;
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
 }
 
-footer{
-    background:#111;
-    color:#aaa;
-    text-align:center;
-    padding:25px 15px;
+.contact {
+    text-align: center;
 }
 
-@media(max-width:600px){
-    header h1{
-        font-size:29px;
+.contact p {
+    margin: 12px;
+    font-size: 18px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 30px;
     }
 
-    .hero h2{
-        font-size:31px;
+    .hero h2 {
+        font-size: 32px;
     }
 
-    nav a{
-        margin:0 7px;
-        font-size:14px;
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
     }
 }
 </style>
@@ -191,74 +219,100 @@ footer{
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero" id="home">
-    <h2>Welcome to New Nisar Cloth House</h2>
-    <p>Men's, Ladies' & Kids' Clothing Available</p>
+<section class="hero" id="home">
+    <div>
+        <h2>Welcome to New Nisar Cloth House</h2>
+        <p>Men's, Ladies' & Kids' Clothing Available</p>
 
-    <a class="whatsapp"
-       href="https://wa.me/923107351732?text=Assalam-o-Alaikum%2C%20I%20want%20to%20know%20about%20your%20clothing%20collection."
-       target="_blank">
-       Order on WhatsApp
-    </a>
-</div>
+        <a class="btn"
+        href="https://wa.me/923107351732?text=Hello%20New%20Nisar%20Cloth%20House%2C%20I%20want%20to%20place%20an%20order."
+        target="_blank">
+        Order on WhatsApp
+        </a>
+    </div>
+</section>
 
 <section id="collections">
-    <h2>Our Collections</h2>
 
-    <div class="collections">
+    <h2 class="section-title">Our Collections</h2>
+
+    <div class="products">
 
         <div class="card">
-            <div class="icon">👔</div>
-            <h3>Men's Collection</h3>
-            <p>Stylish and quality clothing for men.</p>
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Men's Collection</h3>
+                <p>Stylish & Quality Men's Wear</p>
+                <a class="btn"
+                href="https://wa.me/923107351732?text=Hello%2C%20I%20am%20interested%20in%20Men's%20Collection."
+                target="_blank">Order Now</a>
+            </div>
         </div>
 
         <div class="card">
-            <div class="icon">👗</div>
-            <h3>Ladies Collection</h3>
-            <p>Beautiful clothing for ladies and special occasions.</p>
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Ladies Collection</h3>
+                <p>Elegant & Beautiful Ladies Wear</p>
+                <a class="btn"
+                href="https://wa.me/923107351732?text=Hello%2C%20I%20am%20interested%20in%20Ladies%20Collection."
+                target="_blank">Order Now</a>
+            </div>
         </div>
 
         <div class="card">
-            <div class="icon">👕</div>
-            <h3>Kids Collection</h3>
-            <p>Comfortable and stylish clothes for kids.</p>
+            <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Kids Collection</h3>
+                <p>Comfortable & Stylish Kids Wear</p>
+                <a class="btn"
+                href="https://wa.me/923107351732?text=Hello%2C%20I%20am%20interested%20in%20Kids%20Collection."
+                target="_blank">Order Now</a>
+            </div>
         </div>
 
         <div class="card">
-            <div class="icon">🧥</div>
-            <h3>Special Dresses</h3>
-            <p>Clothing for weddings, events and special occasions.</p>
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Special Dresses</h3>
+                <p>Wedding & Special Occasion Wear</p>
+                <a class="btn"
+                href="https://wa.me/923107351732?text=Hello%2C%20I%20am%20interested%20in%20Special%20Dresses."
+                target="_blank">Order Now</a>
+            </div>
         </div>
 
     </div>
 </section>
 
 <section class="about" id="about">
-    <h2>About New Nisar Cloth House</h2>
+
+    <h2 class="section-title">About New Nisar Cloth House</h2>
 
     <p>
-        New Nisar Cloth House is a clothing store offering
-        quality clothing for men, ladies and kids.
-        Visit us for stylish outfits and clothing for
-        everyday wear and special occasions.
+        New Nisar Cloth House provides quality clothing for men,
+        ladies and kids. We offer stylish dresses for everyday wear,
+        special occasions and family shopping.
     </p>
+
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
 
     <p>📍 District Bhimber, P/O Samahni Choki, Azad Kashmir</p>
-    <p>📱 0310-7351732</p>
+
+    <p>📞 0310-7351732</p>
+
     <p>📧 rajamansoor7070@gmail.com</p>
 
-    <br>
-
-    <a class="whatsapp"
-       href="https://wa.me/923107351732"
-       target="_blank">
-       Chat on WhatsApp
+    <a class="btn"
+    href="https://wa.me/923107351732?text=Hello%20New%20Nisar%20Cloth%20House"
+    target="_blank">
+    Chat on WhatsApp
     </a>
+
 </section>
 
 <footer>
